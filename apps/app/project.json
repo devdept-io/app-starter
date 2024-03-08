@@ -37,6 +37,14 @@
         }
       }
     },
+    "dev": {
+      "executor": "nx:run-commands",
+      "defaultConfiguration": "development",
+      "options": {
+        "commands": ["tauri dev"],
+        "parallel": false
+      }
+    },
     "start": {
       "executor": "nx:run-commands",
       "defaultConfiguration": "development",

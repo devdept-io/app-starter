@@ -11,7 +11,7 @@
 
 ## Development
 
-- `nx start (app/web-app)`
+- `nx dev (app/web-app)`
 
 ## Package app
 
