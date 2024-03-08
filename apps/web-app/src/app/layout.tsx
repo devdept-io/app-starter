@@ -1,7 +1,8 @@
 import '@mantine/core/styles.css';
 import './global.css';
 
-import { ColorSchemeScript, MantineProvider } from '@mantine/core';
+import { ColorSchemeScript } from '@mantine/core';
+import { ThemeProvider } from '@org/theme';
 
 export const metadata = {
   title: 'Welcome to web-app',
@@ -19,7 +20,7 @@ export default function RootLayout({
         <ColorSchemeScript />
       </head>
       <body>
-        <MantineProvider>{children}</MantineProvider>
+        <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
   );

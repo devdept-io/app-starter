@@ -9,8 +9,7 @@
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
-        "outputPath": "dist/apps/app",
-        "buildTarget": "app:build:production"
+        "outputPath": "dist/apps/app"
       },
       "configurations": {
         "development": {
@@ -73,20 +72,20 @@
       "outputs": ["coverage/apps/app"],
       "options": {
         "passWithNoTests": true,
-        "reportsDirectory": "../../coverage/apps/editor"
+        "reportsDirectory": "../../coverage/apps/app"
       }
     },
     "lint": {
       "executor": "@nx/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/editor/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["apps/app/**/*.{ts,tsx,js,jsx}"]
       }
     },
     "serve-static": {
       "executor": "@nx/web:file-server",
       "options": {
-        "buildTarget": "editor:build"
+        "buildTarget": "app:build"
       }
     }
   },
