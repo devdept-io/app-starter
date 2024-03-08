@@ -3,13 +3,12 @@
 import '@mantine/core/styles.css';
 
 import { ThemeProvider } from '@org/theme';
-
-import Page from './page';
+import { Example } from '@org/ui';
 
 export default function App() {
   return (
     <ThemeProvider>
-      <Page />
+      <Example />
     </ThemeProvider>
   );
 }

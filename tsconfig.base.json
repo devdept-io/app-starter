@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@org/theme": ["libs/theme/src/index.ts"]
+      "@org/theme": ["libs/theme/src/index.ts"],
+      "@org/ui": ["libs/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
