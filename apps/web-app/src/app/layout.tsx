@@ -1,4 +1,7 @@
+import '@mantine/core/styles.css';
 import './global.css';
+
+import { ColorSchemeScript, MantineProvider } from '@mantine/core';
 
 export const metadata = {
   title: 'Welcome to web-app',
@@ -12,7 +15,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+       <head>
+        <ColorSchemeScript />
+      </head>
+      <body>
+        <MantineProvider>{children}</MantineProvider>
+      </body>
     </html>
   );
 }
