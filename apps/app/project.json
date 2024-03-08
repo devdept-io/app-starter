@@ -9,7 +9,8 @@
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
-        "outputPath": "dist/apps/app"
+        "outputPath": "dist/apps/app",
+        "buildTarget": "app:build:production"
       },
       "configurations": {
         "development": {
@@ -42,7 +43,20 @@
       "defaultConfiguration": "development",
       "options": {
         "commands": ["tauri dev"],
-        "cwd": "apps/app",
+        "parallel": false
+      }
+    },
+    "start:ios": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["tauri ios dev"],
+        "parallel": false
+      }
+    },
+    "start:andriod": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["tauri ios andriod"],
         "parallel": false
       }
     },
@@ -51,7 +65,6 @@
       "defaultConfiguration": "production",
       "options": {
         "commands": ["tauri build"],
-        "cwd": "apps/app",
         "parallel": false
       }
     },
