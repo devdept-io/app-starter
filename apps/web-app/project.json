@@ -1,8 +1,10 @@
 {
-  "name": "app-starter",
+  "name": "web-app",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/app-starter",
+  "sourceRoot": "apps/web-app",
   "projectType": "application",
   "targets": {},
   "tags": []
 }
+
+
