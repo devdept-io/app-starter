@@ -1,14 +1,15 @@
 {
-  "productName": "app",
+  "productName": "app-starter",
   "version": "0.0.0",
-  "identifier": "com.starter.dev",
+  "identifier": "io.devdept.app",
   "build": {
     "devUrl": "http://localhost:1420",
     "frontendDist": "../../../dist/apps",
-    "beforeDevCommand": "nx serve app",
-    "beforeBuildCommand": "cd ../../../ nx build app"
+    "beforeDevCommand": "vite",
+    "beforeBuildCommand": "tsc && vite build"
   },
-  "app": {"windows": [
+  "app": {
+    "windows": [
       {
         "title": "app",
         "width": 800,

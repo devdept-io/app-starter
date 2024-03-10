@@ -1,10 +1,8 @@
 import styles from './ui.module.css';
 
 import { Button } from '@mantine/core';
-/* eslint-disable-next-line */
-export interface UiProps {}
 
-export function Ui(props: UiProps) {
+export function Ui() {
   return (
     <div className={styles['container']}>
       <Button>Hallo</Button>

@@ -60,10 +60,10 @@
         "parallel": false
       }
     },
-    "start:andriod": {
+    "start:android": {
       "executor": "nx:run-commands",
       "options": {
-        "commands": ["tauri ios andriod"],
+        "commands": ["tauri android dev"],
         "parallel": false
       }
     },
