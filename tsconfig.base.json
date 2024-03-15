@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@org/database": ["libs/database/src/index.ts"],
       "@org/theme": ["libs/theme/src/index.ts"],
       "@org/ui": ["libs/ui/src/index.ts"]
     }

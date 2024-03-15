@@ -1,7 +1,7 @@
 # Org
 
 ## Configure
-1 - Change the name org in the project to your liking
+1 - Change the name org in the project to your liking (find and replace @org).
 2 - Configure ios/andriod if needed in the app repo
 3 - If needed change the names of the apps, be sure to find and replace carefully
 
