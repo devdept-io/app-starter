@@ -7,6 +7,7 @@
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit"
   },
+  "deno.enable": true,
   "editor.tabSize": 2,
   "files.autoSave": "onWindowChange"
 }
