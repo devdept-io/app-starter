@@ -1,0 +1,667 @@
+{
+  "version": "6.0",
+  "nxVersion": "19.5.4",
+  "deps": {
+    "@mantine/carousel": "^7.11.2",
+    "@mantine/charts": "^7.11.2",
+    "@mantine/code-highlight": "^7.11.2",
+    "@mantine/core": "^7.11.2",
+    "@mantine/dates": "^7.11.2",
+    "@mantine/dropzone": "^7.11.2",
+    "@mantine/form": "^7.11.2",
+    "@mantine/hooks": "^7.11.2",
+    "@mantine/modals": "^7.11.2",
+    "@mantine/notifications": "^7.11.2",
+    "@mantine/nprogress": "^7.11.2",
+    "@mantine/spotlight": "^7.11.2",
+    "@mantine/tiptap": "^7.11.2",
+    "@tabler/icons-react": "^3.11.0",
+    "@tauri-apps/api": "^2.0.0-beta",
+    "@tauri-apps/plugin-shell": "^2.0.0-beta.9",
+    "@tiptap/extension-link": "^2.5.8",
+    "@tiptap/react": "^2.5.8",
+    "@tiptap/starter-kit": "^2.5.8",
+    "axios": "^1.7.2",
+    "dayjs": "^1.11.12",
+    "embla-carousel-react": "^8.1.7",
+    "next": "^14.2.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.25.1",
+    "recharts": "^2.12.7",
+    "tslib": "^2.6.3",
+    "@babel/core": "^7.25.2",
+    "@babel/preset-react": "^7.24.7",
+    "@nx/devkit": "19.5.4",
+    "@nx/esbuild": "19.5.4",
+    "@nx/eslint": "19.5.4",
+    "@nx/eslint-plugin": "19.5.4",
+    "@nx/jest": "19.5.4",
+    "@nx/js": "19.5.4",
+    "@nx/next": "19.5.4",
+    "@nx/node": "19.5.4",
+    "@nx/playwright": "19.5.4",
+    "@nx/react": "19.5.4",
+    "@nx/vite": "19.5.4",
+    "@nx/web": "19.5.4",
+    "@nx/workspace": "19.5.4",
+    "@playwright/test": "^1.45.3",
+    "@swc-node/register": "~1.10.9",
+    "@swc/cli": "^0.4.0",
+    "@swc/core": "^1.7.4",
+    "@swc/helpers": "^0.5.12",
+    "@tauri-apps/cli": "^2.0.0-beta",
+    "@testing-library/react": "^16.0.0",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^22.0.1",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "@vitest/coverage-v8": "^1.3.1",
+    "@vitest/ui": "^1.3.1",
+    "babel-jest": "^29.7.0",
+    "esbuild": "~0.19.2",
+    "eslint": "^8.56.0",
+    "eslint-config-next": "^14.2.5",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsx-a11y": "^6.9.0",
+    "eslint-plugin-playwright": "^1.6.2",
+    "eslint-plugin-react": "^7.35.0",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "internal-ip": "^8.0.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "jest-environment-node": "^29.7.0",
+    "jsdom": "~24.1.1",
+    "jsonc-parser": "^3.3.1",
+    "nx": "19.5.4",
+    "postcss": "^8.4.40",
+    "postcss-preset-mantine": "^1.17.0",
+    "postcss-simple-vars": "^7.0.1",
+    "prettier": "^3.3.3",
+    "ts-jest": "^29.2.3",
+    "ts-node": "10.9.2",
+    "typescript": "~5.5.4",
+    "vite": "^5.3.5",
+    "vite-plugin-dts": "~3.9.1",
+    "vite-tsconfig-paths": "^4.3.2",
+    "vitest": "^1.3.1"
+  },
+  "pathMappings": {
+    "@org/database": [
+      "libs/database/src/index.ts"
+    ],
+    "@org/theme": [
+      "libs/theme/src/index.ts"
+    ],
+    "@org/ui": [
+      "libs/ui/src/index.ts"
+    ]
+  },
+  "nxJsonPlugins": [
+    {
+      "name": "@nx/next/plugin",
+      "options": {
+        "buildTargetName": "build",
+        "devTargetName": "dev",
+        "startTargetName": "start",
+        "serveStaticTargetName": "serve-static"
+      }
+    },
+    {
+      "name": "@nx/playwright/plugin",
+      "options": {
+        "targetName": "e2e"
+      }
+    },
+    {
+      "name": "@nx/eslint/plugin",
+      "options": {
+        "targetName": "lint"
+      }
+    },
+    {
+      "name": "@nx/jest/plugin",
+      "options": {
+        "targetName": "test"
+      }
+    },
+    {
+      "name": "@nx/vite/plugin",
+      "options": {
+        "buildTargetName": "build",
+        "previewTargetName": "preview",
+        "testTargetName": "test",
+        "serveTargetName": "serve",
+        "serveStaticTargetName": "serve-static"
+      }
+    }
+  ],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": ".editorconfig",
+        "hash": "5443105041930014821"
+      },
+      {
+        "file": ".env.example",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": ".eslintignore",
+        "hash": "7663861978715868291"
+      },
+      {
+        "file": ".eslintrc.json",
+        "hash": "17866138117546000433"
+      },
+      {
+        "file": ".github/workflows/ci.yml",
+        "hash": "6066188456340253396"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "14219720405014295372"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "16448050467312557263"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "16267754514737964994"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "4422400126597322578"
+      },
+      {
+        "file": ".vscode/settings.json",
+        "hash": "225225636241966259"
+      },
+      {
+        "file": "README.md",
+        "hash": "17669461702353645576"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "12333515226966617182"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "9430166341120122740"
+      },
+      {
+        "file": "nx.json",
+        "hash": "7358509225344980353"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "15818333341080479017"
+      },
+      {
+        "file": "package.json",
+        "hash": "2406739418532587852"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "17844778545563040631"
+      }
+    ],
+    "projectFileMap": {
+      "ui": [
+        {
+          "file": "libs/ui/.babelrc",
+          "hash": "2946678488919325452"
+        },
+        {
+          "file": "libs/ui/.eslintrc.json",
+          "hash": "11012487992710232822"
+        },
+        {
+          "file": "libs/ui/README.md",
+          "hash": "2776327953747952561"
+        },
+        {
+          "file": "libs/ui/project.json",
+          "hash": "16833092230311499781"
+        },
+        {
+          "file": "libs/ui/src/index.ts",
+          "hash": "12706152056860723951"
+        },
+        {
+          "file": "libs/ui/src/lib/example.module.css",
+          "hash": "4711811494481130091"
+        },
+        {
+          "file": "libs/ui/src/lib/example.tsx",
+          "hash": "2660392697426046819",
+          "deps": [
+            "npm:@mantine/core",
+            "npm:@tabler/icons-react"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/ui.module.css",
+          "hash": "3894397504515452991"
+        },
+        {
+          "file": "libs/ui/src/lib/ui.tsx",
+          "hash": "254390158336680024",
+          "deps": [
+            "npm:@mantine/core"
+          ]
+        },
+        {
+          "file": "libs/ui/tsconfig.json",
+          "hash": "14088618039610991405"
+        },
+        {
+          "file": "libs/ui/tsconfig.lib.json",
+          "hash": "15147195313780277677"
+        }
+      ],
+      "app": [
+        {
+          "file": "apps/app/.eslintrc.json",
+          "hash": "11012487992710232822"
+        },
+        {
+          "file": "apps/app/.gitignore",
+          "hash": "13046175384202504187"
+        },
+        {
+          "file": "apps/app/.vscode/extensions.json",
+          "hash": "5651031982855621850"
+        },
+        {
+          "file": "apps/app/README.md",
+          "hash": "18341520871042400411"
+        },
+        {
+          "file": "apps/app/index.html",
+          "hash": "12364235863222332107"
+        },
+        {
+          "file": "apps/app/package.json",
+          "hash": "8828832775773620198"
+        },
+        {
+          "file": "apps/app/postcss.config.cjs",
+          "hash": "13446174197773995177"
+        },
+        {
+          "file": "apps/app/project.json",
+          "hash": "6974767071929038630"
+        },
+        {
+          "file": "apps/app/public/tauri.svg",
+          "hash": "8943187561354694101"
+        },
+        {
+          "file": "apps/app/public/vite.svg",
+          "hash": "16046085400642193116"
+        },
+        {
+          "file": "apps/app/src-tauri/.gitignore",
+          "hash": "1797779688387812311"
+        },
+        {
+          "file": "apps/app/src-tauri/Cargo.lock",
+          "hash": "16138956569349015277"
+        },
+        {
+          "file": "apps/app/src-tauri/Cargo.toml",
+          "hash": "8544799375326433816"
+        },
+        {
+          "file": "apps/app/src-tauri/build.rs",
+          "hash": "5676094898456963749"
+        },
+        {
+          "file": "apps/app/src-tauri/gen/schemas/acl-manifests.json",
+          "hash": "15994776896911303396"
+        },
+        {
+          "file": "apps/app/src-tauri/gen/schemas/capabilities.json",
+          "hash": "1389868326933519382"
+        },
+        {
+          "file": "apps/app/src-tauri/gen/schemas/desktop-schema.json",
+          "hash": "9253804775225892884"
+        },
+        {
+          "file": "apps/app/src-tauri/gen/schemas/macOS-schema.json",
+          "hash": "9253804775225892884"
+        },
+        {
+          "file": "apps/app/src-tauri/icons/128x128.png",
+          "hash": "13604589034379337034"
+        },
+        {
+          "file": "apps/app/src-tauri/icons/128x128@2x.png",
+          "hash": "2191839293507375542"
+        },
+        {
+          "file": "apps/app/src-tauri/icons/32x32.png",
+          "hash": "17325101664887874961"
+        },
+        {
+          "file": "apps/app/src-tauri/icons/Square107x107Logo.png",
+          "hash": "6997093065349313629"
+        },
+        {
+          "file": "apps/app/src-tauri/icons/Square142x142Logo.png",
+          "hash": "10328653739424472191"
+        },
+        {
+          "file": "apps/app/src-tauri/icons/Square150x150Logo.png",
+          "hash": "15215086490318304801"
+        },
+        {
+          "file": "apps/app/src-tauri/icons/Square284x284Logo.png",
+          "hash": "16903170323022691040"
+        },
+        {
+          "file": "apps/app/src-tauri/icons/Square30x30Logo.png",
+          "hash": "12971940366329818341"
+        },
+        {
+          "file": "apps/app/src-tauri/icons/Square310x310Logo.png",
+          "hash": "9894347521935468769"
+        },
+        {
+          "file": "apps/app/src-tauri/icons/Square44x44Logo.png",
+          "hash": "10451653797491856714"
+        },
+        {
+          "file": "apps/app/src-tauri/icons/Square71x71Logo.png",
+          "hash": "7571473553781335479"
+        },
+        {
+          "file": "apps/app/src-tauri/icons/Square89x89Logo.png",
+          "hash": "17945601126376091102"
+        },
+        {
+          "file": "apps/app/src-tauri/icons/StoreLogo.png",
+          "hash": "3102759460364416473"
+        },
+        {
+          "file": "apps/app/src-tauri/icons/icon.icns",
+          "hash": "15588948949917020940"
+        },
+        {
+          "file": "apps/app/src-tauri/icons/icon.ico",
+          "hash": "505459834809877271"
+        },
+        {
+          "file": "apps/app/src-tauri/icons/icon.png",
+          "hash": "8839334400673495504"
+        },
+        {
+          "file": "apps/app/src-tauri/src/lib.rs",
+          "hash": "10376681725009078109"
+        },
+        {
+          "file": "apps/app/src-tauri/src/main.rs",
+          "hash": "3946260718104397563"
+        },
+        {
+          "file": "apps/app/src-tauri/tauri.conf.json",
+          "hash": "12874230091584239163"
+        },
+        {
+          "file": "apps/app/src/app.tsx",
+          "hash": "3105010308891516032",
+          "deps": [
+            "npm:@mantine/core",
+            "theme",
+            "ui"
+          ]
+        },
+        {
+          "file": "apps/app/src/assets/react.svg",
+          "hash": "16069471864800376455"
+        },
+        {
+          "file": "apps/app/src/image.svg",
+          "hash": "6276316706703145379"
+        },
+        {
+          "file": "apps/app/src/main.tsx",
+          "hash": "10790953321858708803",
+          "deps": [
+            "npm:react",
+            "npm:react-dom"
+          ]
+        },
+        {
+          "file": "apps/app/src/styles.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/app/src/vite-env.d.ts",
+          "hash": "12946363841406869089"
+        },
+        {
+          "file": "apps/app/tsconfig.json",
+          "hash": "1248541836704270369"
+        },
+        {
+          "file": "apps/app/tsconfig.node.json",
+          "hash": "8586866767247417612"
+        },
+        {
+          "file": "apps/app/vite.config.ts",
+          "hash": "11496842988235532471",
+          "deps": [
+            "npm:vite",
+            "npm:@vitejs/plugin-react",
+            "npm:internal-ip",
+            "npm:@nx/vite"
+          ]
+        }
+      ],
+      "database": [
+        {
+          "file": "libs/database/.eslintrc.json",
+          "hash": "16896711999632553762"
+        },
+        {
+          "file": "libs/database/README.md",
+          "hash": "1419563050992421732"
+        },
+        {
+          "file": "libs/database/package.json",
+          "hash": "15323907531957464246",
+          "deps": [
+            "npm:tslib"
+          ]
+        },
+        {
+          "file": "libs/database/project.json",
+          "hash": "715465505712441648"
+        },
+        {
+          "file": "libs/database/src/database-types.ts",
+          "hash": "2498534080818394889"
+        },
+        {
+          "file": "libs/database/src/index.ts",
+          "hash": "12447360805355621049"
+        },
+        {
+          "file": "libs/database/tsconfig.json",
+          "hash": "634795086719220447"
+        },
+        {
+          "file": "libs/database/tsconfig.lib.json",
+          "hash": "18155349116525859334"
+        }
+      ],
+      "backend": [
+        {
+          "file": "apps/backend/.eslintrc.json",
+          "hash": "13800677001662881425"
+        },
+        {
+          "file": "apps/backend/.vscode/extensions.json",
+          "hash": "7743240597175242551"
+        },
+        {
+          "file": "apps/backend/.vscode/settings.json",
+          "hash": "6269820474994480090"
+        },
+        {
+          "file": "apps/backend/README.md",
+          "hash": "1281939499026703772"
+        },
+        {
+          "file": "apps/backend/project.json",
+          "hash": "7729266485511764678"
+        },
+        {
+          "file": "apps/backend/supabase/.gitignore",
+          "hash": "11655384966607301079"
+        },
+        {
+          "file": "apps/backend/supabase/config.toml",
+          "hash": "10997553761449302392"
+        },
+        {
+          "file": "apps/backend/supabase/seed.sql",
+          "hash": "3244421341483603138"
+        }
+      ],
+      "web-app": [
+        {
+          "file": "apps/web-app/.eslintrc.json",
+          "hash": "6717602153761397577"
+        },
+        {
+          "file": "apps/web-app/index.d.ts",
+          "hash": "5498222895072842432"
+        },
+        {
+          "file": "apps/web-app/jest.config.ts",
+          "hash": "8914481216982259813"
+        },
+        {
+          "file": "apps/web-app/next-env.d.ts",
+          "hash": "5909181270615354023"
+        },
+        {
+          "file": "apps/web-app/next.config.js",
+          "hash": "17252635002163063865",
+          "deps": [
+            "npm:@nx/next"
+          ]
+        },
+        {
+          "file": "apps/web-app/postcss.config.cjs",
+          "hash": "13446174197773995177"
+        },
+        {
+          "file": "apps/web-app/project.json",
+          "hash": "8539174923707127130"
+        },
+        {
+          "file": "apps/web-app/public/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/web-app/public/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "apps/web-app/specs/index.spec.tsx",
+          "hash": "1288872939091782814",
+          "deps": [
+            "npm:react",
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "apps/web-app/src/app/api/hello/route.ts",
+          "hash": "495073956729887886"
+        },
+        {
+          "file": "apps/web-app/src/app/global.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/web-app/src/app/image.svg",
+          "hash": "6276316706703145379"
+        },
+        {
+          "file": "apps/web-app/src/app/layout.tsx",
+          "hash": "14203179213024165322",
+          "deps": [
+            "npm:@mantine/core",
+            "theme"
+          ]
+        },
+        {
+          "file": "apps/web-app/src/app/page.module.css",
+          "hash": "18188325551285086434"
+        },
+        {
+          "file": "apps/web-app/src/app/page.tsx",
+          "hash": "6815743683170990898",
+          "deps": [
+            "ui"
+          ]
+        },
+        {
+          "file": "apps/web-app/tsconfig.json",
+          "hash": "552006219193303466"
+        },
+        {
+          "file": "apps/web-app/tsconfig.spec.json",
+          "hash": "6922413205408300107"
+        }
+      ],
+      "theme": [
+        {
+          "file": "libs/theme/.babelrc",
+          "hash": "2946678488919325452"
+        },
+        {
+          "file": "libs/theme/.eslintrc.json",
+          "hash": "11012487992710232822"
+        },
+        {
+          "file": "libs/theme/README.md",
+          "hash": "3359207826875452305"
+        },
+        {
+          "file": "libs/theme/project.json",
+          "hash": "13614021612553058420"
+        },
+        {
+          "file": "libs/theme/src/index.ts",
+          "hash": "1451499042502906017"
+        },
+        {
+          "file": "libs/theme/src/lib/theme-provider.tsx",
+          "hash": "5593999039736985983",
+          "deps": [
+            "npm:@mantine/core",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/theme/tsconfig.json",
+          "hash": "14088618039610991405"
+        },
+        {
+          "file": "libs/theme/tsconfig.lib.json",
+          "hash": "15147195313780277677"
+        }
+      ]
+    }
+  }
+}
