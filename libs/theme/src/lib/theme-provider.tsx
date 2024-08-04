@@ -1,4 +1,4 @@
-import { MantineProvider, createTheme } from '@mantine/core';
+import { ColorSchemeScript, MantineProvider, createTheme } from '@mantine/core';
 import { ReactNode } from 'react';
 
 const theme = createTheme({
@@ -10,5 +10,12 @@ export interface ThemeProviderProps {
 }
 
 export function ThemeProvider({ children }: ThemeProviderProps) {
-  return <MantineProvider theme={theme}>{children}</MantineProvider>;
+  return (
+    <>
+      <ColorSchemeScript defaultColorScheme="auto" />
+      <MantineProvider theme={theme} defaultColorScheme="auto">
+        {children}
+      </MantineProvider>
+    </>
+  );
 }
