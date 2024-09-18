@@ -50,5 +50,6 @@ out
 .env
 .env.local
 
+.nx/workspace-data
 
 

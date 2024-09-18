@@ -13,6 +13,7 @@
     "lib": ["es2020", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
+    "composite": false,
     "baseUrl": ".",
     "paths": {
       "@org/database": ["libs/database/src/index.ts"],
@@ -20,5 +21,6 @@
       "@org/ui": ["libs/ui/src/index.ts"]
     }
   },
+
   "exclude": ["node_modules", "tmp"]
 }
