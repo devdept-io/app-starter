@@ -39,6 +39,9 @@ testem.log
 Thumbs.db
 
 .nx/cache
+.nx/workspace-data
+.nx/workspace-data/*
+.nx/*
 
 # Next.js
 .next
