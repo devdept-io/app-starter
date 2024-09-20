@@ -3,8 +3,23 @@
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "apps/web-app",
   "projectType": "application",
-  "targets": {},
+  "targets": {
+    "start": {
+      "executor": "nx:run-commands",
+      "defaultConfiguration": "development",
+      "options": {
+        "commands": ["nx dev web-app"],
+        "parallel": false
+      }
+    },
+    "package": {
+      "executor": "nx:run-commands",
+      "defaultConfiguration": "production",
+      "options": {
+        "commands": ["nx build web-app"],
+        "parallel": false
+      }
+    }
+  },
   "tags": []
 }
-
-
