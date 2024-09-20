@@ -1,4 +1,3 @@
-import '@mantine/core/styles.css';
 import './global.css';
 
 import { ColorSchemeScript } from '@mantine/core';
@@ -16,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-       <head>
+      <head>
         <ColorSchemeScript />
       </head>
       <body>
