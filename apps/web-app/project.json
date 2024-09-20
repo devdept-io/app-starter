@@ -8,7 +8,7 @@
       "executor": "nx:run-commands",
       "defaultConfiguration": "development",
       "options": {
-        "commands": ["nx dev web-app"],
+        "commands": ["PORT=4000 nx dev web-app"],
         "parallel": false
       }
     },
