@@ -16,7 +16,7 @@
     "start:ios": {
       "executor": "nx:run-commands",
       "options": {
-        "commands": ["nx dev tauri", "tauri ios dev"],
+        "commands": ["tauri ios dev"],
         "parallel": false
       }
     },

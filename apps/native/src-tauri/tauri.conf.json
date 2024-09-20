@@ -6,8 +6,8 @@
   "build": {
     "frontendDist": "../out",
     "devUrl": "http://localhost:3000",
-    "beforeDevCommand": "nx dev native",
-    "beforeBuildCommand": "nx build build"
+    "beforeDevCommand": "cd apps/native && npx next dev",
+    "beforeBuildCommand": "nx build native"
   },
   "app": {
     "windows": [
