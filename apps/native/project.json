@@ -1,0 +1,39 @@
+{
+  "name": "native",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/native",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "start": {
+      "executor": "nx:run-commands",
+      "defaultConfiguration": "development",
+      "options": {
+        "commands": ["tauri dev"],
+        "parallel": false
+      }
+    },
+    "start:ios": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["nx dev tauri", "tauri ios dev"],
+        "parallel": false
+      }
+    },
+    "start:android": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["tauri android dev"],
+        "parallel": false
+      }
+    },
+    "package": {
+      "executor": "nx:run-commands",
+      "defaultConfiguration": "production",
+      "options": {
+        "commands": ["tauri build"],
+        "parallel": false
+      }
+    }
+  }
+}
