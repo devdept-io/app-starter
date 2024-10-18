@@ -6,7 +6,7 @@
   "build": {
     "frontendDist": "../out",
     "devUrl": "http://localhost:3000",
-    "beforeDevCommand": "cd apps/native && npx next dev",
+    "beforeDevCommand": "cd apps/native && lsof -i :3000 || npx next dev",
     "beforeBuildCommand": "nx build native"
   },
   "app": {
