@@ -22,7 +22,7 @@ const baseConfig = {
   },
 
   // Specify the directory for Next.js output
-  distDir: 'apps/native/.next',
+  distDir: 'out',
 
   // Configure assetPrefix depending on the environment
   assetPrefix: isProd ? '' : `http://${internalHost}:3000`,
