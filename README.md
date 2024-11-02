@@ -11,7 +11,7 @@
 
 ## Development
 
-- `nx dev (native/web-app)`
+- `nx start (native/web-app)`
 
 ## Build app
 
