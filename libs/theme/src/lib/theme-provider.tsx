@@ -1,6 +1,6 @@
 import '@mantine/core/styles.css';
 
-import { ColorSchemeScript, MantineProvider, createTheme } from '@mantine/core';
+import { MantineProvider, createTheme } from '@mantine/core';
 import { ReactNode } from 'react';
 
 const theme = createTheme({
@@ -13,11 +13,8 @@ export interface ThemeProviderProps {
 
 export function ThemeProvider({ children }: ThemeProviderProps) {
   return (
-    <>
-      <ColorSchemeScript defaultColorScheme="auto" />
-      <MantineProvider theme={theme} defaultColorScheme="auto">
-        {children}
-      </MantineProvider>
-    </>
+    <MantineProvider theme={theme} defaultColorScheme="auto">
+      {children}
+    </MantineProvider>
   );
 }
